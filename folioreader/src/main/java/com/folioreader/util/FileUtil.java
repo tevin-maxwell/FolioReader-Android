@@ -51,7 +51,7 @@ public class FileUtil {
         return null;
     }
 
-    public static String getFolioEpubFolderPath(String epubFileName) {
+    public static String getFolioEpubFolderPath(Context context, String epubFileName) {
         // return Environment.getExternalStorageDirectory().getAbsolutePath()
         //         + "/" + FOLIO_READER_ROOT + "/" + epubFileName;
         return context.getExternalFilesDir(Environment.DIRECTORY_PICTURES) + "/" + FOLIO_READER_ROOT + "/" + epubFileName; 
